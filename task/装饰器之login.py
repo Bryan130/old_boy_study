@@ -14,9 +14,8 @@
 pages = ["home", "finance", "book"]
 login_status = "False"
 
-# usr = "bryan"
-# pwd = "123"
 WX_pwd = "1234"
+
 
 def login_type(auth_type):
     def login_state(func):
