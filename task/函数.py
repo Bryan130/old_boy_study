@@ -7,14 +7,23 @@
 # @Date   : 2017/9/4 下午2:38:07
 
 
-def outer():
-    count = 10
+# def outer():
+#     count = 10
+#
+#     def inter():
+#         print(count)
+#         # count = 5
+#         # print(count)
+#     inter()
+#     print(count)
+#
+# outer()
 
+def outer(count):
     def inter():
         print(count)
-        # count = 5
-        # print(count)
-    inter()
-    print(count)
+    return inter
 
-outer()
+a = outer(2)
+a()
+
